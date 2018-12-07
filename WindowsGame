@@ -1,0 +1,120 @@
+int x = 384;
+int y = 284;
+int vertical = 0;
+int horizontal = 0;
+int shipWidth = 32;
+int shipHeight = 32;
+
+
+int ballX = 47;
+int ballY = 553;
+int ballWidth = 30;
+int ballHeight = 30;
+int ballVertical = 3;
+int ballHorizontal = 3;
+
+void setup()
+{
+	size(800, 600);
+	background(0, 0, 0);
+	frameRate(60);
+	noStroke();
+}
+
+void SpaceShip()
+{
+	fill(0,50,230);
+	rect(x,y,shipWidth,shipHeight);
+}
+
+void DodgeBall()
+{
+	fill(255, 15, 15);
+	ellipse(ballX, ballY, ballWidth, ballHeight);
+}
+
+void Arena()
+{
+	fill(255,255,255);
+	rect(768, 0, 32, 1000);
+	rect(0, 568, 1000, 32);
+	rect(0, 0, 32, 1000);
+	rect(0, 0, 1000, 32);
+}
+
+void keyTyped()
+{
+	if(key == 'd')
+	{
+		horizontal = 2;
+	}
+	else if(key == 'a')
+	{
+		horizontal = -2;
+	}
+	else if(key == 'w')
+	{
+		vertical = -2;
+	}
+	else if(key == 's')
+	{
+		vertical = 2;
+	}
+}
+
+void keyReleased()
+{
+	if(key == 'd' && horizontal > 0)
+	{
+		horizontal = 0;
+	}
+	else if(key == 'a' && horizontal < 0)
+	{
+		horizontal = 0;
+	}
+	else if(key == 'w' && vertical < 0)
+	{
+		vertical = 0;
+	}
+	else if(key == 's' && vertical > 0)
+	{
+		vertical = 0;
+	}
+}
+
+void draw()
+{
+	if(x + shipWidth + horizontal < 768 && x + horizontal > 32){
+		x = x + horizontal;
+	}
+	
+	if(y + shipHeight + vertical < 568 && y + vertical > 32){
+		y = y + vertical;
+	}
+	
+	ballX = ballX + ballHorizontal;
+	if(ballX + ballWidth + ballHorizontal >= (768+(ballWidth*0.5))){
+		ballHorizontal = ballHorizontal * (-1);
+	}
+	if(ballX + ballWidth + ballHorizontal <= (32+(ballWidth*1.5))){
+		ballHorizontal = ballHorizontal * (-1);
+	}
+	
+	ballY = ballY + ballVertical;
+	if(ballY + ballHeight + ballVertical >= (568+(ballHeight*0.5))){
+		ballVertical = ballVertical * (-1);
+	}
+	if(ballY + ballHeight + ballVertical <= (32+(ballHeight*1.5))){
+		ballVertical = ballVertical * (-1);
+	}
+	
+	clear();
+	SpaceShip();
+	DodgeBall();
+	Arena();
+}
+
+
+
+
+
