@@ -7,12 +7,12 @@ Additionally to the stuff we learn at the university, im learning coding with th
 which is represented by NGON.
 
 If you want to check them out:
- - YouTube -
+ - YouTube ->
 https://www.youtube.com/channel/UCkrJcaCnr5G7SInfjK-PFDg
- - Twitch  -
+ - Twitch  ->
 https://www.twitch.tv/ngon
  
-All those Projects are basically made on the website:
+All those Projects are basically made on the website of openprocessing.org :
  - https://www.openprocessing.org/sketch/create
  
 If you want to check out my projects:
@@ -21,6 +21,6 @@ If you want to check out my projects:
 Feel free to edit stuff and send me your implementation.
  
 If you want to check out my stream:
- - Twitch  -
+ - Twitch  ->
  https://www.twitch.tv/noahsarcevic
  ** currently under construction, and meanwhile paused **
