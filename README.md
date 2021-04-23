@@ -11,13 +11,15 @@ If you want to check them out:
 https://www.youtube.com/channel/UCkrJcaCnr5G7SInfjK-PFDg
  - Twitch  -
 https://www.twitch.tv/ngon
-
+ 
 All those Projects are basically made on the website:
  - https://www.openprocessing.org/sketch/create
+ 
 If you want to check out my projects:
  - https://openprocessing.org/user/154424?view=sketches
+ 
 Feel free to edit stuff and send me your implementation.
-
+ 
 If you want to check out my stream:
  - Twitch  -
  https://www.twitch.tv/noahsarcevic
